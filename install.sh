@@ -133,7 +133,7 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dialup.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sec/dictionary
 
 rm /etc/freeradius/dictionary
-cp -f default /etc/freeradius/
+cp -f dictionary /etc/freeradius
 rm -rf /root/dictionary
 
 rm /etc/freeradius/sites-enabled/default
