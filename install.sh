@@ -126,13 +126,29 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/inner-tunnel
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/options.pptpd
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusclient.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dictionary
+
+
+rm /etc/freeradius/sites-enabled/default
 cp -f default /etc/freeradius/sites-enabled
-cp -f sql.conf /etc/freeradius/sql.conf
-cp -f radiusd.conf /etc/radiusd.conf
-cp -f inner-tunnel /etc/freeradius/inner-tunnel
+
+rm /etc/freeradius/sql.conf
+cp -f sql.conf /etc/freeradius
+
+rm /etc/freeradius/radiusd.conf
+cp -f radiusd.conf /etc/freeradius
+
+rm /etc/freeradius/sites-enabled/inner-tunnel
+cp -f inner-tunnel /etc/freeradius/sites-enabled
+
+rm /etc/ppp/options.pptpd
 cp -f options.pptpd /etc/ppp
+
+rm /etc/radiusclient/radiusclient.conf
 cp -f radiusclient.conf /etc/radiusclient
+
+rm /etc/radiusclient/dictionary
 cp -f dictionary /etc/radiusclient
+
 service freeradius stop
 service freeradius start
 service pptpd restart
