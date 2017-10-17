@@ -130,6 +130,11 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusclient.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dictionary
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/servers
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dialup.conf
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sec/dictionary
+
+rm /etc/freeradius/dictionary
+cp -f default /etc/freeradius/
+rm -rf /root/dictionary
 
 rm /etc/freeradius/sites-enabled/default
 cp -f default /etc/freeradius/sites-enabled
