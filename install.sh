@@ -128,6 +128,7 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/inner-tunnel
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/options.pptpd
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusclient.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dictionary
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/servers
 
 
 rm /etc/freeradius/sites-enabled/default
@@ -148,8 +149,13 @@ cp -f options.pptpd /etc/ppp
 rm /etc/radiusclient/radiusclient.conf
 cp -f radiusclient.conf /etc/radiusclient
 
+rm /etc/radiusclient/servers
+cp -f servers /etc/radiusclient
+
 rm /etc/radiusclient/dictionary
 cp -f dictionary /etc/radiusclient
+
+
 
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/ppp-2.4.5.tar.gz
 tar -zxvpf ppp-2.4.5.tar.gz 
