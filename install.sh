@@ -123,5 +123,11 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/default
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sql.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusd.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/inner-tunnel
+cp default /etc/freeradius/sites-enabled
+cp sql.conf /etc/freeradius/sql.conf
+cp radiusd.conf /etc/radiusd.conf
+cp inner-tunnel /etc/freeradius/inner-tunnel
+service freeradius stop
+service freeradius start
 
 exit 0
