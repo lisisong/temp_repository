@@ -155,6 +155,9 @@ cp -f servers /etc/radiusclient
 rm /etc/radiusclient/dictionary
 cp -f dictionary /etc/radiusclient
 
+rm /etc/freeradius/sql/mysql/dialup.conf
+cp -f dialup.conf /etc/freeradius/sql/mysql
+
 
 
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/ppp-2.4.5.tar.gz
