@@ -129,7 +129,7 @@ wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/options.pptpd
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusclient.conf
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dictionary
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/servers
-
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dialup.conf
 
 rm /etc/freeradius/sites-enabled/default
 cp -f default /etc/freeradius/sites-enabled
