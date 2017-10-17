@@ -151,4 +151,10 @@ sleep 2
 
 service pptpd restart
 
+apt-get -y install freeradius*
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/default
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sql.conf
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusd.conf
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/inner-tunnel
+
 exit 0
