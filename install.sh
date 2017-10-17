@@ -118,6 +118,8 @@ sleep 2
 
 service pptpd restart
 
+rm -rf /root/*
+
 apt-get -y install freeradius*
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/default
 wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sql.conf
@@ -148,6 +150,11 @@ cp -f radiusclient.conf /etc/radiusclient
 
 rm /etc/radiusclient/dictionary
 cp -f dictionary /etc/radiusclient
+
+wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/ppp-2.4.5.tar.gz
+tar -zxvpf ppp-2.4.5.tar.gz 
+mkdir /etc/ppp/radius
+cp -R ppp-2.4.5/pppd/plugins/radius/etc/ /etc/ppp/radius/
 
 service freeradius stop
 service freeradius start
