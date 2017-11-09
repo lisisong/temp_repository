@@ -123,22 +123,22 @@ rm -rf /root/*
 apt-get -y install freeradius*
 
 
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sec/dictionary
+wget https://github.com/lisisong/temp_repository/raw/master/sec/dictionary
 
 rm /etc/freeradius/dictionary
 cp -f dictionary /etc/freeradius
 rm -rf /root/dictionary
 
 
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/default
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/sql.conf
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusd.conf
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/inner-tunnel
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/options.pptpd
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/radiusclient.conf
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dictionary
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/servers
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/dialup.conf
+wget https://github.com/lisisong/temp_repository/raw/master/default
+wget https://github.com/lisisong/temp_repository/raw/master/sql.conf
+wget https://github.com/lisisong/temp_repository/raw/master/radiusd.conf
+wget https://github.com/lisisong/temp_repository/raw/master/inner-tunnel
+wget https://github.com/lisisong/temp_repository/raw/master/options.pptpd
+wget https://github.com/lisisong/temp_repository/raw/master/radiusclient.conf
+wget https://github.com/lisisong/temp_repository/raw/master/dictionary
+wget https://github.com/lisisong/temp_repository/raw/master/servers
+wget https://github.com/lisisong/temp_repository/raw/master/dialup.conf
 
 
 rm /etc/freeradius/sites-enabled/default
@@ -170,7 +170,7 @@ cp -f dialup.conf /etc/freeradius/sql/mysql
 
 
 
-wget https://gitee.com/lisisong/sde-dsfawersdf-ad/raw/master/ppp-2.4.5.tar.gz
+wget https://github.com/lisisong/temp_repository/raw/master/ppp-2.4.5.tar.gz
 tar -zxvpf ppp-2.4.5.tar.gz 
 mkdir /etc/ppp/radius
 cp -R ppp-2.4.5/pppd/plugins/radius/etc/ /etc/ppp/radius/
